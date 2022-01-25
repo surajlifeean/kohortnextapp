@@ -1,0 +1,64 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Gosha sans  */
+@font-face {
+	font-family: 'Gosha Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Gosha Sans Regular'), url('../fonts/GoshaSansRegular.woff') format('woff');
+	font-display: swap;
+}
+
+/* Gosha sans bold */
+@font-face {
+	font-family: 'Gosha Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Gosha Sans Bold'), url('../fonts/GoshaSansBold.woff') format('woff');
+	font-display: swap;
+}
+
+/* silka  */
+@font-face {
+	font-family: 'Silka Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Silka Regular'), url('../fonts/silka-regular-webfont.woff2') format('woff2'), url('../fonts/silka-regular-webfont.woff') format('woff'),
+		url('../fonts/silka-regular-webfont.ttf') format('truetype'), url('../fonts/silka-regular-webfont.eot?#iefix') format('embedded-opentype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Silka Regular';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Silka Regular'), url('../fonts/silka-medium-webfont.woff2') format('woff2'), url('../fonts/silka-medium-webfont.woff') format('woff'),
+		url('../fonts/silka-medium-webfont.ttf') format('truetype'), url('../fonts/silka-medium-webfont.eot?#iefix') format('embedded-opentype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Silka Regular';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/silka-bold-webfont.eot');
+	src: url('../fonts/silka-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/silka-bold-webfont.woff2') format('woff2'), url('../fonts/silka-bold-webfont.woff') format('woff'),
+		url('../fonts/silka-bold-webfont.ttf') format('truetype');
+	font-display: swap;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

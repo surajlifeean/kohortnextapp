@@ -2,9 +2,9 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import App from 'next/app';
 import Head from 'next/head';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import '../styles/globals.css';
-import theme from '../assets/theme';
+import { ThemeProvider } from '@mui/material/styles';
+import 'styles/globals.css';
+import theme from 'theme';
 
 // const theme = createTheme({
 // 	palette: {
