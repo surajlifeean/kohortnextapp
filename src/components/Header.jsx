@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { useState, memo } from 'react';
 import { makeStyles } from '@mui/styles';
@@ -11,7 +12,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 import Container from './Container';
 
-import kohortlogo from '../assets/images/kohortlogo.svg';
+import kohortlogo from 'assets/images/kohortlogo.svg';
 
 // make styles
 const useStyles = makeStyles((theme) => ({
@@ -70,6 +71,8 @@ const Header = () => {
 	// app bar open or not in obile mode
 	const [open, setopen] = useState(false);
 
+	console.log(kohortlogo);
+
 	return (
 		<Box sx={{ flexGrow: 1 }}>
 			<AppBar position='static' className={classes.appbar}>
@@ -79,8 +82,8 @@ const Header = () => {
 							<MenuRoundedIcon />
 						</IconButton>
 						<div style={{ flexGrow: 1 }}>
-							<Link href='/'>
-								<img src={kohortlogo} alt='logo' />
+							<Link href='/' passHref>
+								<Image src={kohortlogo} width={kohortlogo.width} height={kohortlogo.height} alt='logo' />
 							</Link>
 						</div>
 						<div className={[classes.menuList, open ? 'show' : ''].join(' ')}>
@@ -91,7 +94,9 @@ const Header = () => {
 								<Link href='/'>Blog</Link>
 							</Typography>
 							<Typography variant='body2' className={classes.listItem}>
-								<Link href='/'>Services</Link>
+								<a href='https://kohortpdf.s3.us-east-2.amazonaws.com/Mentoring_Program_Brochure0901.pdf' rel='noreferrer' target='_blank'>
+									Services
+								</a>
 							</Typography>
 						</div>
 					</Toolbar>

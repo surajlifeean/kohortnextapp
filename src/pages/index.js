@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 // mui
 import Typography from '@mui/material/Typography';
@@ -33,6 +34,9 @@ const Homepage = () => {
 
 	return (
 		<>
+		<Head>
+			<title>Homepage</title>
+		</Head>
 			<Header />
 			<section style={{ position: 'relative', minHeight: '34rem' }}>
 				<Container style={{ position: 'relative' }}>
@@ -63,7 +67,7 @@ const Homepage = () => {
 									Higher Education
 								</Typography>
 								<Typography variant='subtitle1' component='div' color='#333333' fontSize='18px' marginBottom='26px'>
-									We know it can be hard to find the best university or college, but we're here to help you!
+									We know it can be hard to find the best university or college, but we&apos;re here to help you!
 								</Typography>
 								{/* <Button variant='contained' color='darkLight' size='small' component={Link} to='/services/higher-education' sx={{ marginTop: 'auto', padding: '7px 10px' }} fullWidth>
 									<Typography variant='subtitle1' component='div' fontFamily='Gosha Sans'>
@@ -93,7 +97,7 @@ const Homepage = () => {
 									Language
 								</Typography>
 								<Typography variant='subtitle1' component='div' color='#333333' fontSize='18px' marginBottom='26px'>
-									Learn the language of your choice and you'll unlock a world of opportunities.
+									Learn the language of your choice and you&apos;ll unlock a world of opportunities.
 								</Typography>
 								{/* <Button variant='contained' color='darkLight' size='small' component={Link} to='/services/language' sx={{ marginTop: 'auto', padding: '7px 10px' }} fullWidth>
 									<Typography variant='subtitle1' component='div' fontFamily='Gosha Sans'>
@@ -158,7 +162,7 @@ const Homepage = () => {
 				<Grid container spacing={2} style={{ marginBottom: '1.5rem' }}>
 					<Grid item md={9} sm={12}>
 						<Typography variant='h4' color='#151B24' component='div' gutterBottom>
-							Learn by the World’s best
+							Learn by the World&apos;s best
 						</Typography>
 						<Typography variant='h6' color='#222222' component='div' sx={{ fontSize: '22px' }}>
 							Discover new skills, knowledge, opportunities and make your dream come true
@@ -296,7 +300,7 @@ const Homepage = () => {
 								</Grid>
 								<Grid item lg={9} md={12} sm={10} xs={12}>
 									<Typography variant='h6' component='div' color='text.darkLight' lineHeight='120%' sx={{ marginBottom: '24px' }}>
-										Meet new people, learn something you didn't know before. This is your one-stop shop for global connections! at zero cost.
+										Meet new people, learn something you didn&apos;t know before. This is your one-stop shop for global connections! at zero cost.
 									</Typography>
 								</Grid>
 							</Grid>
